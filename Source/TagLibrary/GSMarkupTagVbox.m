@@ -61,7 +61,7 @@
 	/* Default is 'standard' */
 	if ([type isEqualToString: @"proportional"])
 	  {
-	    [platformObject setBoxType: GSAutoLayoutProportionalBox];
+	    [platformObject setBoxType: (NSBoxType)GSAutoLayoutProportionalBox];
 	  }
       }
   }

@@ -84,7 +84,7 @@
    * containing some view objects.
    */
   {
-    int i, numberOfRows, numberOfColumns;
+    NSUInteger i, numberOfRows, numberOfColumns;
     numberOfRows = [_content count];
 
     /* Now determine the number of columns.  */
@@ -100,13 +100,13 @@
       }
 
     /* Add that many columns.  */
-    while ([platformObject numberOfColumns] < numberOfColumns)
+    while ([(GSAutoLayoutGrid*)platformObject numberOfColumns] < numberOfColumns)
       {
 	[platformObject addColumn];
       }
 
     /* And that many rows.  */
-    while ([platformObject numberOfRows] < numberOfRows)
+    while ([(GSAutoLayoutGrid*)platformObject numberOfRows] < numberOfRows)
       {
 	[platformObject addRow];
       }

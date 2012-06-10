@@ -66,7 +66,7 @@
 	/* If outlineColumn is not a number, column at index 0 will be
 	 * chosen.  */
 	int index = [outlineColumn intValue];
-	int numberOfColumns = [_content count];
+	NSUInteger numberOfColumns = [_content count];
 	
 	if (index >= 0  &&  index < numberOfColumns)
 	  {

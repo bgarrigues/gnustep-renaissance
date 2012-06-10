@@ -102,7 +102,7 @@
    * matrixCell objects.
    */
   {
-    int i, numberOfRows, numberOfColumns;
+    NSUInteger i, numberOfRows, numberOfColumns;
     numberOfRows = [_content count];
 
     /* Now determine the number of columns.  */

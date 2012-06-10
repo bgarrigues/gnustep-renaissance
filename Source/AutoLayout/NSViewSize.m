@@ -254,8 +254,8 @@
    * originally wrote for gnustep-gui.  */
   NSSize newSize = NSZeroSize;
 
-  int numRows = [self numberOfRows];
-  int numCols = [self numberOfColumns];
+  NSUInteger numRows = [self numberOfRows];
+  NSUInteger numCols = [self numberOfColumns];
   int i, j;
 
   for (i = 0; i < numRows; i++)

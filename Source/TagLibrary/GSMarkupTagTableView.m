@@ -185,7 +185,7 @@
   
   /* Now the contents.  An array of tableColumn objects.  */
   {
-    int i, numberOfColumns;
+    NSUInteger i, numberOfColumns;
     numberOfColumns = [_content count];
 
     for (i = 0; i < numberOfColumns; i++)

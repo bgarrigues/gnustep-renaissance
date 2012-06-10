@@ -48,6 +48,11 @@
   return [NSTabView class];
 }
 
++ (NSString *) tagName
+{
+  return @"tabView";
+}
+
 - (id) initPlatformObject: (id)platformObject
 {
   platformObject = [platformObject init];
