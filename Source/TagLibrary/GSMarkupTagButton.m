@@ -246,6 +246,14 @@
 	      }
 
 	    /* This is a standard button, the same as momentaryPushIn,
+	     * but it does not change the border when highlighting.
+	     */
+	    if ([type isEqualToString: @"momentaryLight"])
+	      {
+		[platformObject setButtonType: NSMomentaryLightButton];
+	      }
+
+	    /* This is a standard button, the same as momentaryPushIn,
 	     * but it does the highlighting by displaying the
 	     * alternateTitle and alternateImage.
 	     */
@@ -263,6 +271,17 @@
 	    if ([type isEqualToString: @"pushOnPushOff"])
 	      {
 		[platformObject setButtonType: NSPushOnPushOffButton];
+	      }
+	    break;
+	    
+	  case 'o':
+	    /* This is the same as a pushOnPushOff, but when you click on
+             * the button, the border is not changed like with the
+             * 'momentaryLight' button.
+	     */
+	    if ([type isEqualToString: @"onOff"])
+	      {
+		[platformObject setButtonType: NSOnOffButton];
 	      }
 	    break;
 
@@ -289,6 +308,18 @@
 #ifndef GNUSTEP
 		needsSettingBorderAndBezel = NO;
 #endif
+	      }
+	    break;
+	    
+	  case 'r':
+	    /* This type of buttons looks like a radio button. The image
+	     * and alternate images are automatically set by the system
+	     * to provide this appearance.  This button is a stock
+	     * button provided by the system.
+	     */
+	    if ([type isEqualToString: @"radio"])
+	      {
+		[platformObject setButtonType: NSRadioButton];
 	      }
 	    break;
 	  }
@@ -329,6 +360,20 @@
 	  }
       }
 #endif
+  }
+
+  /* show border only while mouse inside */
+  {
+    int show = [self boolValueForAttribute: @"showsBorderOnlyWhileMouseInside"];
+
+    if (show == 1)
+      {
+	[platformObject setShowsBorderOnlyWhileMouseInside: YES];
+      }
+    else if (show == 0)
+      {
+	[platformObject setShowsBorderOnlyWhileMouseInside: NO];
+      }
   }
 
   /* sound */

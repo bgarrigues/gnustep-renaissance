@@ -11,6 +11,7 @@
 	<hbox type="proportional">
 	  <box title="Momentary buttons">
 	    <vbox>
+	      <button title="momentaryLight" type="momentaryLight" halign="wexpand" />
 	      <button title="momentaryPushIn" type="momentaryPushIn" halign="wexpand" />
 	      <button title="momentaryChange" alternateTitle="Pushed!" type="momentaryChange" halign="wexpand" />
 	    </vbox>
@@ -18,12 +19,14 @@
 	  <box title="Toggle buttons">
 	    <vbox>
 	      <button title="pushOnPushOff" type="pushOnPushOff" halign="wexpand" />
+	      <button title="onOff" alternateTitle="Pushed!" type="onOff" halign="wexpand" />
 	      <button title="toggle" alternateTitle="Pushed!" type="toggle" halign="wexpand" />
 	    </vbox>
 	  </box>
 	  <box title="Stock buttons" valign="wexpand">
 	    <vbox>
 	      <button title="switch button" type="switch" halign="wexpand" />
+	      <button title="radio button" type="radio" halign="wexpand" />
 	      <vspace />
 	    </vbox>
 	  </box>
@@ -34,6 +37,7 @@
 	<hbox type="proportional">
 	      <button image="NSApplicationIcon" imagePosition="above" title="momentaryPushIn" type="momentaryPushIn" />
 	      <button image="NSApplicationIcon" imagePosition="above" title="pushOnPushOff" type="pushOnPushOff" />
+	      <button image="NSApplicationIcon" imagePosition="above" title="onOff" type="onOff" />
 	</hbox>
 	</box>
 
