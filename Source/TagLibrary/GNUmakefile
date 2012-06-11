@@ -60,6 +60,7 @@ GSMarkupTagPopUpButton.m \
 GSMarkupTagPopUpButtonItem.m \
 GSMarkupTagScrollView.m \
 GSMarkupTagSecureTextField.m \
+GSMarkupTagSegmentedControl.m \
 GSMarkupTagSlider.m \
 GSMarkupTagSpace.m \
 GSMarkupTagSplitView.m \
@@ -109,6 +110,7 @@ GSMarkupTagPopUpButton.h \
 GSMarkupTagPopUpButtonItem.h \
 GSMarkupTagScrollView.h \
 GSMarkupTagSecureTextField.h \
+GSMarkupTagSegmentedControl.h \
 GSMarkupTagSlider.h \
 GSMarkupTagSpace.h \
 GSMarkupTagSplitView.h \

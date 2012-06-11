@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsmarkup>
+
+<gsmarkup>
+  <objects>
+
+    <window title="SegmentedControl" closable="no">
+      <vbox>
+
+	<box title="Style: automatic">
+	  <segmentedControl segmentStyle="automatic" halign="expand">
+	    <segmentItem label="label1"/>
+	    <segmentItem label="label2"/>
+	    <segmentItem image="NSApplicationIcon"/>
+	    <segmentItem>
+	      <menu title="actions">
+		<menuItem title="add" action="add:"/>
+		<menuItem title="remove" action="remove:"/>
+	      </menu>
+	    </segmentItem>
+	  </segmentedControl>
+	</box>
+
+	<box title="Style: capsule">
+	  <segmentedControl segmentStyle="capsule" halign="expand">
+	    <segmentItem label="label1"/>
+	    <segmentItem label="label2"/>
+	    <segmentItem image="NSApplicationIcon"/>
+	    <segmentItem>
+	      <menu title="actions">
+		<menuItem title="add" action="add:"/>
+		<menuItem title="remove" action="remove:"/>
+	      </menu>
+	    </segmentItem>
+	  </segmentedControl>
+	</box>
+
+	<box title="Style: rounded">
+	  <segmentedControl segmentStyle="rounded" halign="expand">
+	    <segmentItem label="label1"/>
+	    <segmentItem label="label2"/>
+	    <segmentItem image="NSApplicationIcon"/>
+	    <segmentItem>
+	      <menu title="actions">
+		<menuItem title="add" action="add:"/>
+		<menuItem title="remove" action="remove:"/>
+	      </menu>
+	    </segmentItem>
+	  </segmentedControl>
+	</box>
+
+	<box title="Style: roundRect">
+	  <segmentedControl segmentStyle="roundRect" halign="expand">
+	    <segmentItem label="label1"/>
+	    <segmentItem label="label2"/>
+	    <segmentItem image="NSApplicationIcon"/>
+	    <segmentItem>
+	      <menu title="actions">
+		<menuItem title="add" action="add:"/>
+		<menuItem title="remove" action="remove:"/>
+	      </menu>
+	    </segmentItem>
+	  </segmentedControl>
+	</box>
+
+	<box title="Style: smallSquare">
+	  <segmentedControl segmentStyle="smallSquare" halign="expand">
+	    <segmentItem label="label1"/>
+	    <segmentItem label="label2"/>
+	    <segmentItem image="NSApplicationIcon"/>
+	    <segmentItem>
+	      <menu title="actions">
+		<menuItem title="add" action="add:"/>
+		<menuItem title="remove" action="remove:"/>
+	      </menu>
+	    </segmentItem>
+	  </segmentedControl>
+	</box>
+
+	<box title="Style: texturedRounded">
+	  <segmentedControl segmentStyle="texturedRounded" halign="expand">
+	    <segmentItem label="label1"/>
+	    <segmentItem label="label2"/>
+	    <segmentItem image="NSApplicationIcon"/>
+	    <segmentItem>
+	      <menu title="actions">
+		<menuItem title="add" action="add:"/>
+		<menuItem title="remove" action="remove:"/>
+	      </menu>
+	    </segmentItem>
+	  </segmentedControl>
+	</box>
+
+	<box title="Style: texturedSquare">
+	  <segmentedControl segmentStyle="texturedSquare" halign="expand">
+	    <segmentItem label="label1"/>
+	    <segmentItem label="label2"/>
+	    <segmentItem image="NSApplicationIcon"/>
+	    <segmentItem>
+	      <menu title="actions">
+		<menuItem title="add" action="add:"/>
+		<menuItem title="remove" action="remove:"/>
+	      </menu>
+	    </segmentItem>
+	  </segmentedControl>
+	</box>
+
+	<button title="Click here to quit" action="terminate:" />
+      </vbox>
+    </window>
+
+  </objects>
+</gsmarkup>
